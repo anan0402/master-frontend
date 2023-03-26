@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<!-- Các thẻ trong html
+ 1. h1 -> h6: heading (tieu de)
+2. p - paragrah (doan van)
+3. img - anh
+4. a - anchor: đặttên cho đường link
+5. ul (unorder list), li- hiển thị danh sách
+6. table
+7. input 
+8. button 
+9. div: tạo khối để bao quanh nội dung chia từng khối -->
+
+
+<html>
+    <!--Comment de luu tru va de vo hieu hoa kien thuc-->
+    <head>
+        <title>F8-Shop</title>
+        <meta charset=" utf-8">
+    </head>
+    <!-- Phan than-->
+    <body>
+       <div>
+        xin chao cac bạn
+        ctrl+/: phim tat cho comment
+
+        h1 cũng có title và tile là một tring những attribute của h1
+        <h1 title="Đây là tiêu đề">Attribute?</h1>
+        <h1>Các thẻ HTML thông dụng</h1>
+
+        <img title="Đây là Ảnh" src="https://i3.ytimg.com/vi/aXwRFbXInyE/maxresdefault.jpg" alt="A image" width="100%" />
+        <a href="https://fullstack.edu.vn/learning/html-css?id=5dda1377-d755-4d2c-8db1-db3cb4dc7c71">Trang web fullstack.edu.vn</a>
+        title, src, alt, width đều gọi là attribute của img 
+        href là attribute của a 
+
+        <input type="checkbox">
+        <input type="checkbox">
+        <input type="checkbox">
+         <!--Tạo ô tíc vuông có thể tích được tất cả -->
+
+         <input type="radio">
+         <input type="radio">
+         <input type="radio">
+         <!--Tạo ô tíc tròn có thể tích được tất cả -->
+
+         <input name=" gender" type="radio">
+         <input name=" gender"  type="radio">
+         <input name=" ge nder"  type="radio">
+         <!--Tạo ô tíc tròn nếu trùng tên chỉ đc chpn 1 trong ba -->
+
+         <button>Đăng Ký</button>
+
+        <p>Khác biệt trong khóa học Pro: trang học giao diện mới, bài học siêu chi tiết, thực hành nhiều dự án, bài tập có gợi ý, đáp án và video chữa bài, v.v.</p>
+        <img src="httpsiimj://cdn.tuoitre.vn/2019/12/31/logo-td-3012-so-bai-bao-quoc-te-scopus-tto-15777560457801705810811.jpg" alt="Tú Hâm">
+        <!-- alt khi lỗi link ảnh hoặc ko tải ảnh được sẽ hiện đoạn string được gán  -->
+        <a href="https://www.facebook.com/letuss004">Tới với tú tồ</a>
+        <ul>
+            <li>Tu to la gi</li>
+            <li>Ho ten day du cua tu to</li>
+        </ul>
+        <table>
+            <!-- thead tiêu đề bảng -->
+            <thead>
+                <!--Table heading -->
+                <th>STT</th>
+                <th>Tên</th>
+                <th>Địa chỉ</th>
+            </thead>
+            <!-- thân bảng -->
+            <tbody>
+                 <!--tr: table round -->
+                 <tr>
+                    <td>1</td>
+                    <td>An</td>
+                    <td>TB</td>
+                 </tr>
+                 <tr>
+                    <td>2</td>
+                    <td>Tu</td>
+                    <td>TH</td>
+                 </tr>
+                 <tr>
+                    <td>3</td>
+                    <td>Tuan</td>
+                    <td>TB</td>
+                 </tr>
+            </tbody>
+        </table>
+        
+       </div>
+
+    </body>
+
+</html>
+
+
+
+
+CSS 
+<style>
+            /*Internal viet truc tiep vao trong file html*/
+            /* css vào h1 đổi màu thành đỏ  */
+            h1{
+                color: red;
+                font-size: 20px;
+            }
+        </style>
+
+External: chỉnh sủa từ file ngoài 
+Phai tạo file.css 
+cần có cú pháp để link: <link rel="stylesheet" href="tên file ">
+
+Inline: viết trực tiếp vào dòng mà mk muốn thay đổi
+
+ID và Class attribute
